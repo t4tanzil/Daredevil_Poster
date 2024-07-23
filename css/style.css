@@ -1,0 +1,201 @@
+/* Set background color and center content */
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+/* General styling for paragraphs */
+p{
+    display: inline-block;
+    margin: 2px;
+}
+
+/* Poster container styling */
+#postercontainer{
+    margin: 10px;
+    padding: 5px;
+    height: 650px;
+    width: calc(650px * (0.675/1));
+    background-color: aqua;
+    background-image: url(../Img/Poster.jpg);
+    background-size: cover;
+}
+
+/* Centering the logo */
+#logo{   
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+
+/* Styling for the logo image */
+#logo>a>img{
+    position: relative;
+    top: 200px;
+    width: 100%;
+}
+
+/* Top section styling */
+#top{
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;    
+}
+
+/* Styling for each character's name */
+.topshelf{
+    display: inline-block;
+    color: rgba(234, 224, 39, 0.678);
+    font-size: 7px;
+    font-weight: bold;
+    margin: 3px;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+
+/* Specific styling for each character */
+#daredevil{
+    margin-top: 3px;
+    padding: 2px;;
+    display: block;
+    color: rgba(252, 21, 21, 0.496);
+    font-size: 16px;
+    font-style: italic; 
+}
+#punisher{
+    margin-top: 3px;
+    padding: 2px;;
+    display: block;
+    color: rgb(132, 129, 129);
+    font-size: 16px;
+    font-style: italic;   
+}
+#kingpin{
+    margin-top: 3px;
+    padding: 2px;;
+    display: block;
+    color: rgba(255, 255, 255, 0.838);
+    font-size: 16px;
+    font-style: italic; 
+}
+
+/* Footer styling */
+#footer{
+    display: flex;
+    position: relative;
+    top: 270px;
+    left: 38px;
+}
+
+/* Footer text styling */
+#footer>div{
+    color: rgb(255, 255, 255);
+    font-size: small;
+}
+
+/* Descriptions section styling */
+#descriptions{
+    margin: 1px;
+    color: wheat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px 9px 0 9px;
+}
+
+/* Styling for names section */
+#names{
+    font-family: Roboto Condensed, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+    top: 225px;
+}
+
+/* Image styling inside names section */
+#names>img{
+    position: relative;
+    width: 70px;
+    margin-left: 10px;
+    height: 45px;
+}
+
+/* Paragraph styling inside names section */
+#names>p{
+    font-size: 13px;
+    letter-spacing: 3.5px;
+    word-spacing: 4px;
+    color: rgb(184, 163, 166);
+}
+
+/* Specific detail styling */
+.detail{
+    font-size: 8px !important;
+    color: rgba(234, 224, 39, 0.678) !important;
+    font-style: italic;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px !important;
+}
+
+/* Other section styling */
+#others{
+    position: relative;
+    top: 270px;
+}
+
+/* Release date styling */
+#releasedate{
+    font-family: Cinzel, 'Times New Roman', Times, serif, sans-serif;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 5px;
+    font-size: 25px;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    word-spacing: 15px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.915) !important;
+    -webkit-text-stroke: .51px rgb(0, 0, 0); 
+}
+
+/* Shooting camera section styling */
+#shootingcamera{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 20px;
+}
+
+/* Image styling inside shooting camera section */
+#shootingcamera>a>img{
+    position: relative;
+    width: 75px;
+    height: 35px;
+    margin: 0 12px 0 12px;
+}
+
+/* Hover effect styling */
+.topshelf p,#logo a img,#names p,
+#shootingcamera a img {
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.topshelf p:hover,#names p:hover,
+#shootingcamera a img:hover {
+    transform: scale(1.3); /* Enlarge element on hover */
+}
+
+#logo a img:hover{
+    transform: scale(1.1); /* Enlarge element on hover */
+}
